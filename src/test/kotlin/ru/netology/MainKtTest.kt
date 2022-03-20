@@ -11,7 +11,7 @@ class MainKtTest {
         val transferAmount = 10000_00
         val transferAmountPrev = 60000_00
         val card = "Maestro"
-        val expectedCommission = 70
+        val expectedCommission = 0
         val actualCommission = transaction(transferAmount, transferAmountPrev, card)
         assertEquals(expectedCommission, actualCommission)
     }
